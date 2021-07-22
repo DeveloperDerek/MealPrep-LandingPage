@@ -94,7 +94,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     top: 45%;
     left: 50%;
     text-align: center;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
       -webkit-transform: translate3d(-50%,-50%,0);
@@ -125,7 +124,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .howitworks {
-    /* font-size: 7vw; */
     font-size: 64px;
     color: #d68c45;
     text-align: center;
@@ -133,8 +131,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .grid .box {
-    /* border: 1px solid #d68c45;
-    border-radius: 125px; */
     padding: 20px;
     text-align: center;
 }
@@ -157,4 +153,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-size: 14px;
 }
 
+.prices {
+    position: relative; 
+    display: flex;
+    width: 100%;
+}
+
+.prices::before {
+    content: "";
+    position: absolute;
+    background-image: url("images/cabbage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.73;
+}
 

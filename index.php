@@ -58,7 +58,7 @@ get_header();
 		</div>
 	</div>
 
-	<div class="mb-5">
+	<div class="my-5">
 		<a name="howitworks">
 		<h1 class="howitworks">How it Works</h1>
 		<div class="row mx-3 grid">
@@ -93,6 +93,67 @@ get_header();
 		</div>
 	</div>
 
+	<div class="prices">
+        <section class="container mt-5">
+            <div class="row mx-2 my-3">
+
+                <!-- item -->
+                <div class="col-md-4 text-center px-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa fa-desktop"></i>
+                            <h3>Plan 1</h3>
+                            <p>$100 / Month</p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                        </ul>
+                        <a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>
+                    </div>
+                </div>
+                <!-- /item -->
+
+                <!-- item -->
+                <div class="col-md-4 text-center px-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa fa-desktop"></i>
+                            <h3>Plan 2</h3>
+                            <p>$200 / Month</p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                        </ul>
+                        <a class="btn btn-lg btn-block btn-warning" href="#">BUY NOW!</a>
+                    </div>
+                </div>
+                <!-- /item -->
+
+                <!-- item -->
+                <div class="col-md-4 text-center px-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa fa-desktop"></i>
+                            <h3>Plan 3</h3>
+                            <p>$300 / Month</p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                        </ul>
+                        <a class="btn btn-lg btn-block btn-success" href="#">BUY NOW!</a>
+                    </div>
+                </div>
+                <!-- /item -->
+
+            </div>
+        </secti>
+	</div>
 	<main id="primary" class="site-main">
 		<?php
 
