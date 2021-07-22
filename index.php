@@ -58,7 +58,7 @@ get_header();
 		</div>
 	</div>
 
-	<div class="my-5">
+	<div class="container-fluid my-5">
 		<a name="howitworks">
 		<h1 class="howitworks">How it Works</h1>
 		<div class="row mx-3 grid">
@@ -94,65 +94,59 @@ get_header();
 	</div>
 
 	<div class="prices">
-        <section class="container mt-5">
-            <div class="row mx-2 my-3">
+        <section class="container-fluid">
+            <div class="row mx-2">
 
-                <!-- item -->
-                <div class="col-md-4 text-center px-4">
+                <!-- item 1-->
+                <div class="col-lg-4 text-center px-4 my-3">
                     <div class="card">
                         <div class="card-body">
-                            <i class="fa fa-desktop"></i>
-                            <h3>Plan 1</h3>
-                            <p>$100 / Month</p>
+                            <h3>Basic Deal</h3>
+                            <p class="pt-2">$11.99 / Meal</p>
                         </div>
-                        <ul class="list-group list-group-flush text-center">
-                            <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fas fa-seedling"></i> Fresh & Sustainable </li>
+                            <li class="list-group-item"><i class="fas fa-dice-one"></i> Lunch</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> 4 meals per week</li>
                         </ul>
-                        <a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>
+                        <a class="btn btn-lg" href="#">Choose</a>
                     </div>
                 </div>
-                <!-- /item -->
 
-                <!-- item -->
-                <div class="col-md-4 text-center px-4">
+                <!-- item 2-->
+                <div class="col-lg-4 text-center px-4 my-3">
                     <div class="card">
                         <div class="card-body">
-                            <i class="fa fa-desktop"></i>
-                            <h3>Plan 2</h3>
-                            <p>$200 / Month</p>
+                            <h3>Standard Deal</h3>
+                            <p class="pt-2">$9.99 / Meal</p>
                         </div>
-                        <ul class="list-group list-group-flush text-center">
-                            <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fas fa-seedling"></i> Fresh & Sustainable</li>
+                            <li class="list-group-item"><i class="fas fa-dice-two"></i> Lunch, Dinner</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> 8 meals per week</li>
                         </ul>
-                        <a class="btn btn-lg btn-block btn-warning" href="#">BUY NOW!</a>
+                        <a class="btn btn-lg" href="#">Choose</a>
                     </div>
                 </div>
-                <!-- /item -->
 
-                <!-- item -->
-                <div class="col-md-4 text-center px-4">
+                <!-- item 3-->
+                <div class="col-lg-4 text-center px-4 my-3">
                     <div class="card">
                         <div class="card-body">
-                            <i class="fa fa-desktop"></i>
-                            <h3>Plan 3</h3>
-                            <p>$300 / Month</p>
+                            <h3>Ultra Deal</h3>
+                            <p class="pt-2">$7.99 / Meal</p>
                         </div>
-                        <ul class="list-group list-group-flush text-center">
-                            <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fas fa-seedling"></i> Fresh & Sustainable </li>
+                            <li class="list-group-item"><i class="fas fa-dice-three"></i> Breakfast, Lunch, Dinner</li>
+                            <li class="list-group-item"><i class="fa fa-check"></i> 12 meals per week</li>
                         </ul>
-                        <a class="btn btn-lg btn-block btn-success" href="#">BUY NOW!</a>
+                        <a class="btn btn-lg" href="#">Choose</a>
                     </div>
                 </div>
-                <!-- /item -->
 
             </div>
-        </secti>
+        </section>
 	</div>
 	<main id="primary" class="site-main">
 		<?php

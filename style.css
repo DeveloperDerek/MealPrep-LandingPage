@@ -38,7 +38,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .carousel-inner .slide-1,
 .carousel-inner .slide-2,
 .carousel-inner .slide-3 {
-    height: 90vh;
+    height: 95vh;
     position: relative; 
     display: flex;
     width: 100%;
@@ -96,11 +96,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
+        -webkit-transform: translate3d(-50%,-50%,0);
+        -moz-transform: translate3d(-50%,-50%,0);
+        -ms-transform: translate3d(-50%,-50%,0);
+        -o-transform: translate3d(-50%,-50%,0);
+        transform: translate3d(-50%,-50%,0);
 }
 
 .carousel-item h1 {
@@ -173,3 +173,61 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     opacity: 0.73;
 }
 
+.prices .container-fluid {
+    margin: 90px 20px;
+}
+
+.card {
+    color: #386641;
+}
+
+.card:hover {
+    background-color: #FAFFD8;
+}
+
+.card .btn {
+    color: #fff;
+    background-color: #386641;
+}
+
+.card .btn:hover {
+    background-color: #d68c45;
+} 
+
+.footer-item h5,
+.footer-item li,
+.footer-item a {
+    color: #52414C;
+    text-decoration: none;
+}
+
+.footer-item a:hover,
+.footer-item i:hover {
+    color: #d68c45;
+}
+
+.social-icons {
+    font-size: 20px;
+    align-items: center;
+}
+
+.fb {
+    color: #3b5998;
+}
+
+.ig {
+    color: #8a3ab9;
+}
+
+.tw {
+    color: #1DA1F2;
+}
+
+.newsletter button{
+    color: #386641;
+    border: 1px solid #386641;
+}
+
+.newsletter button:hover {
+    background-color: #386641;
+}
