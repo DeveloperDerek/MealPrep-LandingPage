@@ -14,70 +14,92 @@
 
 get_header();
 ?>
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="d-block w-100" alt="...">
-		</div>
-		<div class="carousel-item">
-			<img src="https://wallpaperaccess.com/full/30100.jpg" class="d-block w-100" alt="...">
-		</div>
-		<div class="carousel-item">
-			<img src="https://image.shutterstock.com/image-photo/micro-peacock-feather-hd-imagebest-260nw-1127238599.jpg" class="d-block w-100" alt="...">
+	<div class="mb-4">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="slide-1"></div>
+					<div class="hero">
+						<h1>Professional Chefs</h1>
+						<h1>Healthy Meals</h1>
+						<button class="btn-cta">Start Now</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slide-2"></div>
+					<div class="hero">
+						<h1>Free delivery,</h1>
+						<h1>Just for you</h1>
+						<button class="btn-cta">Start Now</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slide-3"></div>
+					<div class="hero">
+						<h1>Select a diet</h1>
+						<h1>Live life easier</h1>
+						<button class="btn-cta">Start Now</button>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
 	</div>
-	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
-</div>
+
+	<div class="mb-5">
+		<a name="howitworks">
+		<h1 class="howitworks">How it Works</h1>
+		<div class="row mx-3 grid">
+			<div class="col-6 col-lg-3 box">
+				<i class="fas mb-2 fa-wind"></i>
+				<header>
+					<span>Chill</span>
+				</header>
+				<p>Your prepared meals arrive fresh in an insulated box. Just unpack and put them in the fridge.</p>
+			</div>
+			<div class="col-6 col-lg-3 box">
+				<i class="fas mb-2 fa-fire"></i>
+				<header>
+					<span>Heat</span>
+				</header>
+				<p>No time? No problem. Just heat up when hungry. Ready in 3 minutes.</p>
+			</div>
+			<div class="col-6 col-lg-3 box">
+				<i class="fas mb-2 fa-utensils"></i>
+				<header>
+					<span>Eat</span>
+				</header>
+				<p>Breakfast, Lunch, Dinner. Fresh taste catered for you based on your diet.</p>
+			</div>
+			<div class="col-6 col-lg-3 box">
+				<i class="fas mb-2 fa-redo"></i>
+				<header>
+					<span>Repeat</span>
+				</header>
+				<p>Every week, pre-made meals are delivered to right to your door, nationwide.</p>
+			</div>
+		</div>
+	</div>
 
 	<main id="primary" class="site-main">
 		<?php
-		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
 		?>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
