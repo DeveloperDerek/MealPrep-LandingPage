@@ -38,7 +38,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .carousel-inner .slide-1,
 .carousel-inner .slide-2,
 .carousel-inner .slide-3 {
-    height: 95vh;
+    height: 98vh;
     position: relative; 
     display: flex;
     width: 100%;
@@ -104,7 +104,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .carousel-item h1 {
-    color: #d68c45;
+    color: #52414C;
     font-weight: 700;
     font-style: italic;
 }
@@ -151,6 +151,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .grid p {
     color: #386641;
     font-size: 14px;
+}
+
+.about {
+    color: #52414C;
+}
+
+.about .cap {
+    color: #386641;
+}
+
+.about .para {
+    font-size: 19px;
+}
+
+.about button {
+    color: #386641;
+    border: 1px solid #386641;
+}
+
+.about button:hover {
+    color: #fff;
+    background: #386641;
 }
 
 .prices {

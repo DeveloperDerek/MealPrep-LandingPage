@@ -7,6 +7,8 @@
  * @package whalewatch
  */
 
+
+ // ADD IMAGES
 if( !defined(THEME_IMG_PATH)){
 	define( 'THEME_IMG_PATH', get_stylesheet_directory_uri() . '/images' );
 }
@@ -148,6 +150,12 @@ function whalewatch_scripts() {
 	wp_style_add_data( 'whalewatch-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'whalewatch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script(
+        'script', // name your script so that you can attach other scripts and de-register, etc.
+        get_template_directory_uri() . '/js/script.js', // this is the location of your script file
+        array('jquery') // this array lists the scripts upon which your script depends
+    );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
