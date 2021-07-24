@@ -92,8 +92,8 @@
 				<div class="footer-item newsletter">
 					<form>
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Enter email address" />
-							<button class="btn btn-outline-success">Submit</button>
+							<input type="email" class="form-control" placeholder="Enter email address" required />
+							<input type="button" class="btn-outline-success">Submit</input>
 						</div>
 					</form>
 				</div>

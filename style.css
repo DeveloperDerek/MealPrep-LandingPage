@@ -18,18 +18,27 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    font-family: Arimo;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/********************************/
+/*       Navbar     */
+/********************************/
 
 .navbar-brand,
 .nav-item a {
     color: #386641;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #d68c45
 }
 
 /********************************/
@@ -38,7 +47,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .carousel-inner .slide-1,
 .carousel-inner .slide-2,
 .carousel-inner .slide-3 {
-    height: 98vh;
+    height: 100vh;
     position: relative; 
     display: flex;
     width: 100%;
@@ -55,7 +64,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.73;
+    opacity: 0.5;
 }
 
 .carousel-inner .slide-2::before {
@@ -69,7 +78,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.73;
+    opacity: 0.5;
 }
 
 .carousel-inner .slide-3::before {
@@ -83,7 +92,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.73;
+    opacity: 0.5;
 }
 
 /********************************/
@@ -123,6 +132,36 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     background-color: #d68c45;
 }
 
+
+.modal-footer button {
+    position: relative;
+    background-color: #386641;
+    color: #fff;
+}
+
+.modal-btns button {
+    color: #52414C;
+    border: 1px solid #d68c45;
+}
+
+.active-btn {
+    background-color: #FAFFD8;
+}
+
+.modal-body p {
+    color: #52414C;
+    font-size: 14px;
+}
+
+#price-modal h2,
+#price-modal .list-group-item {
+    color: #386641;
+}
+
+/********************************/
+/*          Howitworks        */
+/********************************/
+
 .howitworks {
     font-size: 64px;
     color: #d68c45;
@@ -150,6 +189,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .grid p {
     color: #386641;
+    line-height: 1.5;
     font-size: 14px;
 }
 
@@ -163,6 +203,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .about .para {
     font-size: 19px;
+    line-height: 2.0;
 }
 
 .about button {
@@ -174,6 +215,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     color: #fff;
     background: #386641;
 }
+
+/********************************/
+/*          Prices        */
+/********************************/
 
 .prices {
     position: relative; 
@@ -207,18 +252,25 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     background-color: #FAFFD8;
 }
 
-.card .btn {
+.card button {
     color: #fff;
     background-color: #386641;
 }
 
-.card .btn:hover {
+.card button:hover {
     background-color: #d68c45;
 } 
+
+/********************************/
+/*          Footer        */
+/********************************/
+
 
 .footer-item h5,
 .footer-item li,
 .footer-item a {
+    font-family: 'Lato', sans-serif;
+
     color: #52414C;
     text-decoration: none;
 }
@@ -252,4 +304,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .newsletter button:hover {
     background-color: #386641;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-item h1 {
+        font-size: 4rem;
+    }
 }

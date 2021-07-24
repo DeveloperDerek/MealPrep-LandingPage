@@ -25,12 +25,12 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site bg-light">
 <!-- NAVBAR -->
-	<nav class="navbar navbar-expand-md fixed-top bg-light">
-		<a class="navbar-brand" href="#"><img class="img-fluid" width="28" height="28" src="https://static.thenounproject.com/png/2103263-200.png"> Prep Meals</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<i class="fas fa-bars"></i>
+	<nav class="navbar navbar-expand-md fixed-top bg-light d-flex">
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="img-fluid" width="28" height="28" src="https://static.thenounproject.com/png/2103263-200.png">
 		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+		<div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+			<a class="navbar-brand" href="#"><img class="img-fluid" width="28" height="28" src="https://static.thenounproject.com/png/2103263-200.png"> Prep Meals</a>
 			<ul class="navbar-nav">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meal Plans</a>
@@ -42,7 +42,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Menu Items</a>
+					<a class="nav-link" href="#prices">Menu Items</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#howitworks">How it Works</a>
